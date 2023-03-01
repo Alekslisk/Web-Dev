@@ -1,0 +1,12 @@
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.rating| currency }}</h4>
+  <p>{{ product.description }}</p>
+
+<p >{{product.likes}}</p>
+<button type="button" (click)="giveLike(product)"> Like </button>
+
+<a href="{{product.url}}">Product in Kaspi</a>
+</div>
